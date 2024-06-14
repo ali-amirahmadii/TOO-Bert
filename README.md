@@ -6,10 +6,16 @@ This study introduces TOO-BERT, enhancing MLM representations by explicitly leve
 
 
 
-![GLA Regularization](./imgs/GLA1.png?raw=true "GLA: Global-Local self-Attention regularization")
-*GLA: Global-Local self-Attention regularization*
+![code_swap_2.png](./imgs/code_swap_2.png?raw=true)
+*(a) Code swapping*
 
+![visit_swap_2.png](./imgs/visit_swap_2.png?raw=true)
+*(b) Visit swapping*
 
+Code versus Visits swapping. (a) Code swapping does not alter the visit structures of patient trajec-tories and only substitutes one medical code with another medical code in a different visit. (b) Visits swappingsubstitutes one visit, along with all its contents, with another visit, further disrupting the relative-time-wisedependencies between diagnoses and medications.
+
+![sample_size](./imgs/training_sample_size_vs_auc.png?raw=true)
+Comparison of HF prediction AUC values for the test sets by fine-tuning on different data sizes onthe MIMIC-IV dataset. The shadows represent the 90% confidence intervals.
 
 <hr>
 
